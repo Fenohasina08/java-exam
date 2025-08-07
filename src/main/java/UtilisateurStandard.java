@@ -5,6 +5,6 @@ public class UtilisateurStandard extends Utilisateur {
     }
 
     public void commenter(Publication publication, String contenu) {
-        publication.ajouterCommentaire(new Commentaire(this, contenu));
+        publication.ajouterCommentaire(new commentaire(this, contenu));
     }
 }
