@@ -2,8 +2,7 @@
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
+ 
 
 public class GroupeTest {
 
@@ -36,7 +35,7 @@ public class GroupeTest {
         List<Publication> resultats = groupe.rechercherPublicationsParMotCle("recette");
 
         assertEquals(1, resultats.size());
-        assertTrue(resultats.get(0).getContenu().contains("recette"));
+        assertTrue(resultats.getFirst().getContenu().contains("recette"));
     }
 
 
